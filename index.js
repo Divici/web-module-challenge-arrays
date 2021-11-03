@@ -45,11 +45,16 @@ Use the copy function below to do the following:
   2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
+function copy(array){
   /*your code here*/
+  let arrayCopy=[];
+  for (let i=0; i<array.length; i++){
+    arrayCopy.push(array[i]);
+  }
+  return arrayCopy;
 }    
 
-
+console.log(copy(originalFlavors));
 
 
 
@@ -64,9 +69,17 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
+function is31Flavors(array){
  /*your code here*/
+ if(array.length === 31){
+  return true;
+ }
+ else{
+  return false;
+ }
 }
+
+console.log(is31Flavors(originalFlavors));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
